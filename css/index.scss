@@ -6,7 +6,7 @@ body{
     align-items: center;
     font-family: sans-serif;
 }
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
     width: 10px;
 
 }
@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:active{
     background-color: rgb(27, 2, 250);
 
-}
+} */
 .container{
     width: 97%;
     border: 1px solid orange;
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb:active{
     background-color: white;
     padding-bottom: 10px;
     font-size: 25px;
-    height: 100vh;
+    height: auto;
 }
 .header{
     display: flex;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb:active{
     border: 2px solid black;
     width: 80%;
     padding: 10px;
-    background-color: rgb(160, 148, 148);
+    background-color: rgb(220, 245, 196);
     position: relative;
     margin-bottom: 20px;
     margin: auto;
@@ -72,6 +72,9 @@ body::-webkit-scrollbar-thumb:active{
 #amount p{
     color: blue;
     margin: 5px;
+    span{
+        border: 1px solid;
+    }
     
 }
 
@@ -95,23 +98,31 @@ body::-webkit-scrollbar-thumb:active{
 span{
     color: orangered;
 }
+button{
+    font-size: 20px;
+    
+}
 #games{
     margin-top: 10px;
 }
-#game1{
+#game1, #game2{
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin: auto;
     border: 2px solid orangered;
-    padding: 20px;
+    padding: 5px;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 2px 3px rgb(5, 5, 5);
+   
+    div , p , button{
+      margin: 0px;
+    }
+   
 }
 #team-a-odds,#team-b-odds,#team-x-odds{
     font-size: 20px;
     width: 100%;
-    padding: 0, 20, 0, 20;
+    
 }
 #ok{
     width: 100%;
@@ -175,10 +186,11 @@ button:active{
    
     #games{
         width: 100%;
+        #game1,#game2{
+            width: 80%;
+        }
     }
-    #game1{
-        width: 80%;
-    }
+    
    
     #bet{
         width: 90%;
@@ -186,5 +198,11 @@ button:active{
         flex-direction: column;
         font-size: 20px;
         font-family: sans-serif;
+        div{
+            margin-bottom: 10px;
+        }
+        #update{
+            font-size: 30px;
+        }
     }
 }

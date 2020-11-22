@@ -24,7 +24,7 @@ function displayCurrentTime() {
 
 	//output
 
-	document.getElementById("time").innerHTML = timeString;
+	document.getElementById("time").innerHTML ="[ EAT  ]" +  timeString;
 	let timer = setTimeout(displayCurrentTime, 1000);
 }
 // this function will add zero before the components if the value is less than 10;

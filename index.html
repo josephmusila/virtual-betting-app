@@ -4,10 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link href="index.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
 	</head>
 
 	<body>
+	
 		<div class="container">
 			<div class="header">
 				<p id="title">Betika.com</p>
@@ -18,23 +19,47 @@
 					<div id="team-a">
 						<p id="team-a-name">Team A</p>
 						<p>1</p>
-						<button id="team-a-odds" value="2.5" class="odds">2.55</button>
+						<button id="team-a-odds" class="odds"></button>
 					</div>
 					<div id="vs">
 						<p id="vs">VS</p>
 						<p>x</p>
-						<button id="team-x-odds" value="2.81" class="odds">2.8</button>
+						<button id="team-x-odds" class="odds"></button>
 					</div>
 					<div id="team-b">
 						<p id="team-b-name">Team B</p>
 						<p>2</p>
-						<button id="team-b-odds" value="3.86" class="odds">3.8</button>
+						<button id="team-b-odds" class="odds"></button>
 					</div>
 				</div>
+				<div id="game2">
+					<div id="team-a">
+						<p id="team-a-name">Team A</p>
+						<p>1</p>
+						<button id="team-a1-odds" class="odds"></button>
+					</div>
+					<div id="vs">
+						<p id="vs">VS</p>
+						<p>x</p>
+						<button id="team-x1-odds" class="odds"></button>
+					</div>
+					<div id="team-b">
+						<p id="team-b-name">Team B</p>
+						<p>2</p>
+						<button id="team-b1-odds" class="odds"></button>
+					</div>
 			</div>
+			
 			<div id="bet">
 				<div id="amount">
-					<p>Total odss: <span id="odd"></span></p>
+					<p>
+						<p>Game 1 you pick: <span id="odd1"></span></p>
+						<p>Game 2 you pick: <span id="odd2"></span></p>
+					</p>
+					<p>Total odds:</p>
+					<p>
+					<span id="tot-odds">0</span>
+					</p>
 
 					<p>Tax: 20%</p>
 					<p>Amount</p>
@@ -52,6 +77,7 @@
 
 		<script src="Time.js" type="module"></script>
 		<script src="GetOdds.js" type="module"></script>
+		<script src="TeamOdds.js" type="module"></script>
 		<script src="CalculateBet.js" type="module"></script>
 		<script src="app.js" type="module"></script>
 	</body>
